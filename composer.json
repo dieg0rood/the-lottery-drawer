@@ -1,0 +1,17 @@
+{
+    "name": "dieg0rood/the-lottery-drawer",
+    "description": "This is an API responsible for distributing draw numbers and carrying out the draw",
+    "autoload": {
+        "psr-4": {
+            "Dieg0rood\\TheLotteryDrawer\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego Ribeiro"
+        }
+    ],
+    "require": {
+        "php": "8.3.10"
+    }
+}
