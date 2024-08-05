@@ -2,12 +2,10 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$repository = Dotenv\Repository\RepositoryBuilder::createWithNoAdapters()
-    ->addAdapter(Dotenv\Repository\Adapter\EnvConstAdapter::class)
-    ->addWriter(Dotenv\Repository\Adapter\PutenvAdapter::class)
-    ->immutable()
-    ->make();
+require_once __DIR__ . '/../app/config/env_builder.php';
 
-$dotenv = Dotenv\Dotenv::create($repository, __DIR__);
+require_once __DIR__ . '/../app/config/exception_handler.php';
 
 require_once __DIR__ . '/../app/Routes/api.php';
+
+require_once __DIR__ . '/../app/config/dispatch_router.php';

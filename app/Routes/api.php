@@ -1,11 +1,9 @@
 <?php
 
-use App\Controller\DrawController;
+use App\Controller\TicketController;
 use FastRoute\RouteCollector;
 use function FastRoute\simpleDispatcher;
 
 $dispatcher = simpleDispatcher(function(RouteCollector $router) {
-    $router->get('/draw', [DrawController::class, 'draw']);
+    $router->post('/ticket', [TicketController::class, 'create']);
 });
-
-include_once __DIR__ . '/dispatch.php';
