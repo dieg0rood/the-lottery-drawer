@@ -3,7 +3,7 @@
     "description": "This is an API responsible for distributing draw numbers and carrying out the draw",
     "autoload": {
         "psr-4": {
-            "Dieg0rood\\TheLotteryDrawer\\": "app/"
+            "App\\": "app/"
         }
     },
     "authors": [
@@ -12,6 +12,8 @@
         }
     ],
     "require": {
-        "php": "8.3.10"
+        "php": "8.3.10",
+        "vlucas/phpdotenv": "^5.6",
+        "nikic/fast-route": "^1.3"
     }
 }
